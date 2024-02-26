@@ -14,7 +14,8 @@ public class Teste {
         //Sub classe Corrente - Super classe Corrente
         Corrente co = new Corrente();
         co.depositar(800);
-        co.saque(1000);
+        co.setLimiteCredito(800);
+        co.saque(1500);
         System.out.println("O saldo atual da conta é: " + co.getSaldo());
 
         /*
@@ -25,7 +26,8 @@ public class Teste {
         //Sub classe Salario
         Salario salario = new Salario();
         salario.depositar(800);
-        double limiteSal = salario.calcularLimiteSaldo();
-        System.out.println("Com base no saldo da sua conta, você terá " + limiteSal + " de limite na sua conta salário.");
+        double limite = salario.calcularLimiteSaldo();
+        salario.setLimite(limite);
+        System.out.println("Com base no saldo da sua conta, você terá " + limite + " de limite na sua conta salário.");
     }
 }
