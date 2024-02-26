@@ -19,7 +19,7 @@ public class Teste {
         System.out.println("O saldo atual da conta é: " + co.getSaldo());
 
         /*
-         * -200 será o saldo atual da conta, pois o saldo da conta é ilimitado, logo pode-se tirar quantias sem um limite pré
+         * o saldo da conta é ilimitado, logo pode-se tirar quantias sem um limite pré
          * estabelecido pelo o banco como um crédito, que será dado a conta salário.
         */
         
