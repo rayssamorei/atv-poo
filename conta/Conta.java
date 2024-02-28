@@ -5,6 +5,18 @@ public class Conta {
     private int numAgencia;
     private String titular;
 
+    //Construtores
+    public Conta(){
+
+    }
+    
+    public Conta(int numConta, int numAgencia, String titular) {
+        saldo = 0;
+        this.numConta = numConta;
+        this.numAgencia = numAgencia;
+        this.titular = titular;
+    }
+
     //Métodos especificos
     public void saque (double valor){
         saldo -= valor;
