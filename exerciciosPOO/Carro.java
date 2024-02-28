@@ -1,8 +1,13 @@
 public class Carro extends Veiculo {
     private boolean conversivel;
     private String motor;
-
+    
     public Carro(){
+        
+    }
+    public Carro(boolean conversivel, String motor) {
+        this.conversivel = conversivel;
+        this.motor = motor;
     }
     public Carro(String marca, String modelo, String qtdRodas, String cor, boolean conversivel, String motor) {
         super(marca, modelo, qtdRodas, cor);
@@ -10,11 +15,12 @@ public class Carro extends Veiculo {
         this.motor = motor;
     }
     public Carro(String marca, String modelo, String qtdRodas, String cor, double velocidade, String anoFabricado,
-            boolean conversivel, String motor) {
-        super(marca, modelo, qtdRodas, cor, velocidade, anoFabricado);
+            char tipoHabilitacao, boolean conversivel, String motor) {
+        super(marca, modelo, qtdRodas, cor, velocidade, anoFabricado, tipoHabilitacao);
         this.conversivel = conversivel;
         this.motor = motor;
     }
+    
     public boolean isConversivel() {
         return conversivel;
     }

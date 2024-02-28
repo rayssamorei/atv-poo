@@ -5,6 +5,7 @@ public class Veiculo{
     private String cor;
     private double velocidade;
     private String anoFabricado;
+    private char tipoHabilitacao;
 
     public Veiculo() {
     }
@@ -14,13 +15,14 @@ public class Veiculo{
         this.qtdRodas = qtdRodas;
         this.cor = cor;
     }
-    public Veiculo(String marca, String modelo, String qtdRodas, String cor, double velocidade, String anoFabricado) {
+    public Veiculo(String marca, String modelo, String qtdRodas, String cor, double velocidade, String anoFabricado, char tipoHabilitacao) {
         this.marca = marca;
         this.modelo = modelo;
         this.qtdRodas = qtdRodas;
         this.cor = cor;
         this.velocidade = velocidade;
         this.anoFabricado = anoFabricado;
+        this.tipoHabilitacao = tipoHabilitacao;
     }
 
     public String getMarca() {
@@ -59,10 +61,16 @@ public class Veiculo{
     public void setAnoFabricado(String anoFabricado) {
         this.anoFabricado = anoFabricado;
     }
-
+    public char getTipoHabilitacao() {
+        return tipoHabilitacao;
+    }
+    public void setTipoHabilitacao(char tipoHabilitacao) {
+        this.tipoHabilitacao = tipoHabilitacao;
+    }
     @Override
     public String toString() {
         return "Veiculo [marca=" + marca + ", modelo=" + modelo + ", qtdRodas=" + qtdRodas + ", cor=" + cor
-                + ", velocidade=" + velocidade + ", anoFabricado=" + anoFabricado + "]";
+                + ", velocidade=" + velocidade + ", anoFabricado=" + anoFabricado + ", tipoHabilitacao="
+                + tipoHabilitacao + "]";
     }
 }

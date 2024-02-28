@@ -4,7 +4,7 @@ public class Moto extends Veiculo {
     public Moto(){
         
     }
-
+    
     public Moto(boolean temCapacete) {
         this.temCapacete = temCapacete;
     }
@@ -15,8 +15,8 @@ public class Moto extends Veiculo {
     }
 
     public Moto(String marca, String modelo, String qtdRodas, String cor, double velocidade, String anoFabricado,
-            boolean temCapacete) {
-        super(marca, modelo, qtdRodas, cor, velocidade, anoFabricado);
+            char tipoHabilitacao, boolean temCapacete) {
+        super(marca, modelo, qtdRodas, cor, velocidade, anoFabricado, tipoHabilitacao);
         this.temCapacete = temCapacete;
     }
 
