@@ -36,5 +36,4 @@ public class Salario extends Corrente {
             saque(valor);
         }
     }
-
 }
